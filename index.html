@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUEGO: 7 y media</title>
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="clear.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="pop-up">
+
+    </div>
+
+    <div id="main-container">
+        <div id="header">
+            <p id="player-1">Jugador 1: <span id="player-result-1" class="results"></span></p>
+            <p id="player-2">Jugador 2: <span id="player-result-2" class="results"></span></p>
+            <p id="player-3">Jugador 3: <span id="player-result-3" class="results"></span></p>
+            <p>CPU: <span id="cpu-result" class="results"></span></p>
+        </div>
+
+        <div id="deck-area">
+            <div id="deck">
+                <img src="img/trasera_jug.jpg" id="deck-img">
+            </div>
+            <div id="cards-dropped">
+
+            </div>
+        </div>
+
+        <div id="play-area">
+            <div id="player1-area" class="areas"></div>
+            <div id="player2-area" class="areas"></div>
+            <div id="player3-area" class="areas"></div>
+            <div id="cpu-area" class="areas"></div>
+        </div>
+
+        <div id="modal-background" class="modal-flex">
+            <div id="modal-popup">
+                <p id="modal-title">¿Cuantos jugadores son?</p>
+                <form action="" id="modal-form">
+                    <input type="number" min="1" max="3" value="1" placeholder="Cantidad de usuarios"
+                        id="quantity-players-input">
+                    <div id="accept-modal-btn">
+                        Empezar Partida
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="app.js"></script>
+
+</html>

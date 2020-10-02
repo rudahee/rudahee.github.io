@@ -1,0 +1,178 @@
+body {
+    background: lightgreen url("img/background.jpg") no-repeat top;
+}
+
+/*
+
+MODAL POPUP STYLES
+
+*/
+
+#modal-background {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#modal-popup {
+    width: 300px;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+}
+#modal-title {
+    margin-top: 8%;
+    font-weight: normal;
+    font-size: 18pt;
+    text-decoration: underline;
+}
+
+#quantity-players-input {
+    width: 180px;
+    display: block;
+    margin: 15px auto;
+    padding: 2px;
+    border: 0;
+    border-bottom: 2px black solid;  
+    background: transparent;
+    outline: none;
+    text-align: center;
+}
+#accept-modal-btn {
+    margin: 10px 5px;
+    color:#ffffff;
+    font-weight: bold;
+    padding: 2px 4px;
+    font-size: 12pt;
+    background-color: #096333;
+    height: 40px;
+    width: 180px;
+    border-radius: 6px;
+    border: black solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#modal-hidden {
+    display: none;
+}
+
+/*
+
+HEADER STYLES
+
+*/
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    width: 95%;
+    background-color: white;
+    border-radius: 6px;
+    border: 2px black solid;
+    margin: -10px auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 2px;
+}
+
+.results {
+    font-size: 1.1em;
+}
+
+.player-hidden {
+    display: none;
+}
+
+.result-over {
+    color: red;
+    text-decoration: line-through;
+
+}
+
+.active-player {
+    font-size: 1.1em;
+    font-style: italic;
+    color: rgb(187, 0, 0);
+}
+
+/*
+
+PLAYZONE STYLES
+
+*/
+
+#deck, 
+
+#deck-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#deck-img {
+    flex-shrink: 4;
+    width: 90px;
+    margin: 20px 25px;
+}
+
+#deck, #cards-dropped {
+
+    margin: 20px 10px;   
+    display:flex;
+    flex-direction: row;
+}
+
+#cards-dropped .cartas {
+    width: 90px;    
+    margin: 1% 10px 1% 0;   
+}
+
+#play-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.areas {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 40%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 190px;
+    margin: 3px;
+}
+
+#play-area .cartas { 
+    height: 90px;
+    width: 90px;
+    flex: 0 0 10%;  
+    padding: 5px 4px;   
+}
+
